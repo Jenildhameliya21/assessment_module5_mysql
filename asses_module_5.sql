@@ -54,7 +54,7 @@ Return even countries without related cities and customers*/
 
 SELECT country.country_name_eng AS country_name,city.city_name,customer.customer_name FROM country LEFT JOIN city ON country.id = city.country_id LEFT JOIN  customer ON city.id = customer.city_id;
 
-/*(join multiple tables using both left and inner join) 
+/* Task : 2(join multiple tables using both left and inner join) 
 Return the list of all countries that have pairs(exclude countries which are not referenced by any 
 city). For such pairs return all customers. 
 Return even pairs of not having a single customer*/
